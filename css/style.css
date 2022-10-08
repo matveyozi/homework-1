@@ -42,9 +42,10 @@ button {
 	background: #F5F4FA;
 	border: none;
 	border-radius: 4px;
+	font-family: 'Roboto';
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 162%;
+	line-height: 1.62;
 	letter-spacing: 0.03em;
 	color: var(--black-color);
 
@@ -61,7 +62,7 @@ button {
 .title {
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 42px;
+	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
@@ -80,7 +81,7 @@ button {
 	font-family: 'Raleway';
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 119%;
+	line-height: 1.19;
 	letter-spacing: 0.03em;
 }
 
@@ -112,7 +113,7 @@ button {
 .menu__item a {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 114%;
+	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--black-color);
 }
@@ -129,7 +130,7 @@ button {
 .contacts__item a {
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 114%;
+	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--gray-color);
 }
@@ -157,7 +158,7 @@ button {
 	width: 696px;
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 136%;
+	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -174,7 +175,7 @@ button {
 
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 188%;
+	line-height: 1.88;
 	letter-spacing: 0.06em;
 	margin: 0 auto;
 
@@ -198,7 +199,7 @@ button {
 .about__subtitle {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--black-color);
@@ -208,7 +209,7 @@ button {
 .about__descr {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 171%;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--gray-color);
 }
@@ -249,7 +250,7 @@ button {
 	padding-bottom: 59px;
 
 	font-size: 16px;
-	line-height: 118%;
+	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
@@ -259,6 +260,7 @@ button {
 }
 
 .team__name {
+	font-size: 16px;
 	font-weight: 500;
 	color: var(--black-color);
 	margin-bottom: 10px;
@@ -316,7 +318,7 @@ button {
 .work__title {
 	font-weight: 700;
 	font-size: 18px;
-	line-height: 200%;
+	line-height: 2.00;
 	letter-spacing: 0.06em;
 	color: var(--black-color);
 	margin-bottom: 4px;
@@ -325,7 +327,7 @@ button {
 
 .work__descr {
 	font-size: 16px;
-	line-height: 188%;
+	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: #757575;
 	padding-left: 24px;
@@ -359,7 +361,7 @@ button {
 .address__link {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 171%;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
 	margin-top: 9px;
@@ -369,7 +371,7 @@ button {
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 171%;
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
 	margin-top: 0;
