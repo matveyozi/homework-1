@@ -72,8 +72,12 @@ button {
 }
 
 .container {
-	max-width: 1170px;
+	max-width: 1200px;
+	padding: 0 15px;
 	margin: 0 auto;
+}
+.section {
+	padding: 94px 0;
 }
 
 /* LOGO */
@@ -184,7 +188,7 @@ button {
 /*ABOUT*/
 
 .about {
-	padding-top: 94px;
+
 }
 
 .about__list {
@@ -217,7 +221,7 @@ button {
 /*JOB*/
 
 .job {
-	padding: 94px 0;
+	
 }
 
 .job__title {
@@ -230,7 +234,7 @@ button {
 }
 
 .team {
-	padding: 94px 0;
+	
 	background: #F5F4FA;
 }
 
@@ -274,7 +278,7 @@ button {
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO*/
 .portfolio__works {
-	padding-top: 94px;
+	
 }
 
 /*BUTTONS*/
