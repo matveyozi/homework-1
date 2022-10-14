@@ -73,11 +73,10 @@ button {
 
 .container {
 	max-width: 1200px;
-	padding: 0 15px;
 	margin: 0 auto;
 }
 .section {
-	padding: 94px 0;
+	padding-top: 94px;
 }
 
 /* LOGO */
@@ -155,7 +154,7 @@ button {
 /*HERO*/
 .hero {
 	background: #2F303A;
-	padding: 200px 0 280px;
+	padding: 200px 0;
 }
 
 .hero__title {
@@ -234,7 +233,7 @@ button {
 }
 
 .team {
-	
+	padding-bottom: 94px;
 	background: #F5F4FA;
 }
 
@@ -251,16 +250,17 @@ button {
 	background: #FFFFFF;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	padding-bottom: 59px;
 
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
 }
-
+.team__item div {
+	padding: 30px 10px;
+}
 .team__item img {
-	margin-bottom: 30px;
+
 }
 
 .team__name {
@@ -278,18 +278,18 @@ button {
 /*PORTFOLIO PAGE*/
 /*PORTFOLIO*/
 .portfolio__works {
-	
+	padding-bottom: 94px;
 }
 
 /*BUTTONS*/
 .filter__list {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 34px;
+	gap: 8px;
 }
 
 .filter__item {
-	margin-right: 30px;
+	
 }
 
 .filter__item:last-child {
@@ -304,19 +304,19 @@ button {
 .works__list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 30px;
+	padding-top: 34px;
 }
 
 .work {
-	min-height: 404px;
-	border: 1px solid #EEEEEE;
-	margin-bottom: 30px;
-	padding-bottom: 20px;
+	border-bottom: 1px solid #EEEEEE;
+}
+.work > div {
+	padding: 24px 20px;
 }
 
 .work__img {
-	height: 294px;
-	margin-bottom: 20px;
+	
 }
 
 .work__title {
@@ -325,8 +325,6 @@ button {
 	line-height: 2.00;
 	letter-spacing: 0.06em;
 	color: var(--black-color);
-	margin-bottom: 4px;
-	padding-left: 24px;
 }
 
 .work__descr {
@@ -334,13 +332,11 @@ button {
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: #757575;
-	padding-left: 24px;
 }
 
 /* FOOTER */
 
 .footer {
-	min-height: 252px;
 	background: #2F303A;
 	padding: 60px 0;
 }
