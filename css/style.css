@@ -220,7 +220,7 @@ button {
 /*JOB*/
 
 .job {
-	
+	padding-bottom: 94px;
 }
 
 .job__title {
@@ -305,18 +305,20 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	padding-top: 34px;
+	margin-top: 34px;
 }
 
 .work {
-	border-bottom: 1px solid #EEEEEE;
+	
 }
 .work > div {
 	padding: 24px 20px;
+	border: 1px solid #EEEEEE;
+	border-top: none;
 }
 
 .work__img {
-	
+	display: block;
 }
 
 .work__title {
@@ -325,6 +327,7 @@ button {
 	line-height: 2.00;
 	letter-spacing: 0.06em;
 	color: var(--black-color);
+	margin-bottom: 4px;
 }
 
 .work__descr {
@@ -367,7 +370,7 @@ button {
 	margin-top: 9px;
 }
 
-.address__link:first-child {
+li:first-child .address__link {
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 14px;
@@ -377,6 +380,6 @@ button {
 	margin-top: 0;
 }
 
-.address__link:hover {
+li .address__link:hover {
 	color: var(--blue-color);
 }
