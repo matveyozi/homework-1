@@ -4,7 +4,7 @@
 	--blue-color: #2196F3;
 	--black-color: #212121;
 	--gray-color: #757575;
-	;
+	--icon-color: #AFB1B8;
 }
 
 /* font-family: 'Raleway', sans-serif;
@@ -75,8 +75,14 @@ button {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
 .section {
 	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+svg {
+	fill: currentColor;
 }
 
 /* LOGO */
@@ -130,13 +136,20 @@ button {
 	margin-left: auto;
 }
 
+.contacts__item {
+	position: relative;
+}
+
 .contacts__item a {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--gray-color);
+	display: flex;
+	align-items: center;
 }
+
 
 .contacts__item a:hover {
 	color: var(--blue-color);
@@ -146,6 +159,20 @@ button {
 	margin-left: 50px;
 }
 
+.contacts__icon {
+
+	margin-right: 10px;
+}
+
+.contacts__icon.icon-envelop {
+	width: 16px;
+	height: 12px;
+}
+
+.contacts__icon.icon-phone {
+	width: 10px;
+	height: 16px;
+}
 
 
 
@@ -153,8 +180,13 @@ button {
 
 /*HERO*/
 .hero {
-	background: #2F303A;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero_bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	padding: 200px 0;
+	max-width: 1600px;
+
 }
 
 .hero__title {
@@ -187,7 +219,7 @@ button {
 /*ABOUT*/
 
 .about {
-
+	padding-bottom: 0;
 }
 
 .about__list {
@@ -217,11 +249,23 @@ button {
 	color: var(--gray-color);
 }
 
+.about__icon {
+	background: #F5F4FA;
+	border-radius: 4px;
+	padding: 25px 0;
+	margin-bottom: 30px;
+}
+
+.about__icon .icon {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+}
+
 /*JOB*/
 
-.job {
-	padding-bottom: 94px;
-}
+.job {}
 
 .job__title {
 	margin-bottom: 50px;
@@ -232,8 +276,10 @@ button {
 	justify-content: space-between;
 }
 
+/*TEAM*/
+
 .team {
-	padding-bottom: 94px;
+
 	background: #F5F4FA;
 }
 
@@ -256,12 +302,12 @@ button {
 	text-align: center;
 	letter-spacing: 0.03em;
 }
-.team__item div {
+
+.team__item>div {
 	padding: 30px 10px;
 }
-.team__item img {
 
-}
+.team__item img {}
 
 .team__name {
 	font-size: 16px;
@@ -273,6 +319,74 @@ button {
 .team__vacancy {
 	font-weight: 400;
 	color: var(--gray-color);
+	margin-bottom: 16px;
+}
+
+.social__list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social__item {}
+
+.social__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	color: var(--icon-color, #AFB1B8);
+}
+
+.social__link:hover {
+	color: #fff;
+	background-color: var(--blue-color);
+	border-radius: 50%;
+}
+
+
+.social__icon {
+
+	width: 20px;
+	height: 20px;
+}
+
+/* CLIENTS */
+
+.clients {}
+
+.clients__title {
+	margin-bottom: 50px;
+}
+
+.clients__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.clients__item {}
+
+.clients__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+	color: var(--icon-color, #AFB1B8);
+}
+
+.clients__icon {
+	width: 106px;
+	height: 60px;
+}
+
+.clients__link:hover {
+	color: var(--blue-color);
+	border-color: var(--blue-color);
 }
 
 /*PORTFOLIO PAGE*/
@@ -288,9 +402,7 @@ button {
 	gap: 8px;
 }
 
-.filter__item {
-	
-}
+.filter__item {}
 
 .filter__item:last-child {
 	margin-right: 0;
@@ -308,10 +420,13 @@ button {
 	margin-top: 34px;
 }
 
-.work {
-	
+.work {}
+
+.work__link {
+	display: block;
 }
-.work > div {
+
+.work__wrapper {
 	padding: 24px 20px;
 	border: 1px solid #EEEEEE;
 	border-top: none;
@@ -337,11 +452,20 @@ button {
 	color: #757575;
 }
 
+.work__link:hover {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* FOOTER */
 
 .footer {
 	background: #2F303A;
 	padding: 60px 0;
+}
+
+.footer__list {
+	display: flex;
+	gap: 70px;
 }
 
 .footer .logo {
@@ -370,16 +494,30 @@ button {
 	margin-top: 9px;
 }
 
-li:first-child .address__link {
-	text-decoration: none;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
-	color: #FFFFFF;
-	margin-top: 0;
+.address__item:first-child .address__link {
+	color: #FFF;
 }
 
-li .address__link:hover {
+.address__item .address__link:hover {
 	color: var(--blue-color);
+}
+
+.social__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+
+.footer__item .social__link {
+	color: #fff;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.footer__item .social__link:hover {
+	background-color: var(--blue-color);
 }

@@ -23,8 +23,19 @@
           </ul>
         </nav>
         <ul class="contacts__list">
-          <li class="contacts__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="contacts__item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com">
+              <svg class="contacts__icon icon-envelop">
+                <use href="img/icomoon/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item"><a href="tel:+380961111111">
+              <svg class="contacts__icon icon-phone">
+                <use href="img/icomoon/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a></li>
         </ul>
       </div>
     </div>
@@ -44,6 +55,11 @@
       <div class="container">
         <ul class="about__list">
           <li class="about__item">
+            <div class="about__icon">
+              <svg class="icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-antenna"></use>
+              </svg>
+            </div>
             <h3 class="subtitle about__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="about__descr">
               Ідейні міркування, і навіть початок повсякденної роботи з
@@ -51,6 +67,11 @@
             </p>
           </li>
           <li class="about__item">
+            <div class="about__icon">
+              <svg class="icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </div>
             <h3 class="subtitle about__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="about__descr">
               Завдання організації, особливо рамки і місце навчання кадрів
@@ -58,6 +79,11 @@
             </p>
           </li>
           <li class="about__item">
+            <div class="about__icon">
+              <svg class="icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-diagram"></use>
+              </svg>
+            </div>
             <h3 class="subtitle about__subtitle">ПЛАНУВАННЯ</h3>
             <p class="about__descr">
               Так само консультація з широким активом значною мірою
@@ -65,6 +91,11 @@
             </p>
           </li>
           <li class="about__item">
+            <div class="about__icon">
+              <svg class="icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </div>
             <h3 class="subtitle about__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="about__descr">
               Значимість цих проблем настільки очевидна, що реалізація
@@ -95,30 +126,176 @@
             <img src="img/igor.jpg" alt="Igor" class="team__person" width="270" />
             <div>
               <h3 class="team__name">Ігор Дем'яненко</h3>
-            <p class="team__vacancy">Product Designer</p>
+              <p class="team__vacancy">Product Designer</p>
+              <ul class="social__list">
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="# rel=" noopener nofollow noreferrer" target="_blank"" class="
+                    social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a></li>
+              </ul>
             </div>
           </li>
           <li class="team__item">
             <img src="img/olga.jpg" alt="Olga" class="team__person" width="270" />
             <div>
               <h3 class="team__name">Ольга Рєпіна</h3>
-            <p class="team__vacancy">Frontend Developer</p>
+              <p class="team__vacancy">Frontend Developer</p>
+              <ul class="social__list">
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a></li>
+              </ul>
             </div>
           </li>
           <li class="team__item">
             <img src="img/mikola.jpg" alt="Igor" class="team__person" width="270" />
             <div>
               <h3 class="team__name">Микола Тарасов</h3>
-            <p class="team__vacancy">Marketing</p>
+              <p class="team__vacancy">Marketing</p>
+              <ul class="social__list">
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                    class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a></li>
+              </ul>
             </div>
           </li>
           <li class="team__item">
-            <img src="img/mihaylo.jpg" alt="Igor" class="team__person" width="270" />
+            <img src="img/mihaylo.jpg" alt="Mihaylo" class="team__person" width="270" />
             <div>
               <h3 class="team__name">Михайло Єрмаков</h3>
-            <p class="team__vacancy">UI Designer</p>
+              <p class="team__vacancy">UI Designer</p>
+              <ul class="social__list">
+                <li class="social__item"><a href="#" class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a></li>
+                <li class="social__item"><a href="#" class="social__link link">
+                    <svg class="social__icon">
+                      <use href="img/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a></li>
+              </ul>
             </div>
           </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section clients">
+      <div class="container">
+        <h2 class="title title-fz36 clients__title">
+          Постійні клієнти
+        </h2>
+        <ul class="clients__list">
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo1"></use>
+              </svg>
+            </a></li>
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo2"></use>
+              </svg>
+            </a></li>
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo3"></use>
+              </svg>
+            </a></li>
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo4"></use>
+              </svg>
+            </a></li>
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo5"></use>
+              </svg>
+            </a></li>
+          <li class="clients__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+              class="clients__link">
+              <svg class="clients__icon">
+                <use href="img/icomoon/symbol-defs.svg#icon-logo6"></use>
+              </svg>
+            </a></li>
         </ul>
       </div>
     </section>
@@ -126,17 +303,54 @@
 
   <footer class="footer">
     <div class="container">
-      <a href="#" class="logo"><span>Web</span>Studio</a>
-      <address class="address">
-        <ul>
-          <li><a target="_blank" href="https://goo.gl/maps/PSJ1B6wUbV4Z93yD6" rel="noopener noreferrer nofollow"
-              class="address__link">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li><a class='address__link' href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class='address__link' href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item"><a target="_blank" href="https://goo.gl/maps/PSJ1B6wUbV4Z93yD6"
+                  rel="noopener noreferrer nofollow" class="address__link">м. Київ, пр-т Лесі Українки, 26</a></li>
+              <li class="address__item"><a class='address__link' href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address__item"><a class='address__link' href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </li>
+        <li class="footer__item">
+          <h3 class="social__title">
+            приєднуйтесь
+          </h3>
+          <ul class="social__list">
+            <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                class="social__link link">
+                <svg class="social__icon">
+                  <use href="img/icomoon/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="# rel=" noopener nofollow noreferrer" target="_blank"" class="
+                social__link link">
+                <svg class="social__icon">
+                  <use href="img/icomoon/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                class="social__link link">
+                <svg class="social__icon">
+                  <use href="img/icomoon/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" rel="noopener nofollow noreferrer" target="_blank"
+                class="social__link link">
+                <svg class="social__icon">
+                  <use href="img/icomoon/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </footer>
+  <!-- <script src="js/script.js"></script> -->
 </body>
 
 </html>
