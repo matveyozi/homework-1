@@ -54,7 +54,6 @@ button {
 .btn:hover,
 .btn:focus {
 	background-color: var(--blue-color);
-	scale: 1.1;
 	color: #FFFFFF;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -131,6 +130,10 @@ svg {
 	color: var(--blue-color);
 }
 
+.menu__item a:hover, .menu__item a:focus	 {
+	color: var(--blue-color);
+}
+
 .contacts__list {
 	display: flex;
 	margin-left: auto;
@@ -151,7 +154,7 @@ svg {
 }
 
 
-.contacts__item a:hover {
+.contacts__item a:hover, .contacts__item a:focus {
 	color: var(--blue-color);
 }
 
@@ -252,15 +255,17 @@ svg {
 .about__icon {
 	background: #F5F4FA;
 	border-radius: 4px;
-	padding: 25px 0;
+	height: 120px;
 	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .about__icon .icon {
 	display: block;
 	width: 70px;
 	height: 70px;
-	margin: 0 auto;
 }
 
 /*JOB*/
@@ -339,7 +344,7 @@ svg {
 	color: var(--icon-color, #AFB1B8);
 }
 
-.social__link:hover {
+.social__link:hover, .social__link:focus {
 	color: #fff;
 	background-color: var(--blue-color);
 	border-radius: 50%;
@@ -384,7 +389,7 @@ svg {
 	height: 60px;
 }
 
-.clients__link:hover {
+.clients__link:hover, .clients__link:focus {
 	color: var(--blue-color);
 	border-color: var(--blue-color);
 }
@@ -452,7 +457,7 @@ svg {
 	color: #757575;
 }
 
-.work__link:hover {
+.work__link:hover, .work__link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -498,7 +503,7 @@ svg {
 	color: #FFF;
 }
 
-.address__item .address__link:hover {
+.address__item .address__link:hover, .address__item .address__link:focus {
 	color: var(--blue-color);
 }
 
@@ -518,6 +523,6 @@ svg {
 	border-radius: 50%;
 }
 
-.footer__item .social__link:hover {
+.footer__item .social__link:hover,  .footer__item .social__link:focus{
 	background-color: var(--blue-color);
 }
