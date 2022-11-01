@@ -468,9 +468,10 @@ svg {
 	padding: 60px 0;
 }
 
-.footer__list {
+.footer__wrapper {
 	display: flex;
 	gap: 70px;
+	align-items: baseline;
 }
 
 .footer .logo {
@@ -489,14 +490,17 @@ svg {
 	flex-direction: column;
 	max-width: 231px;
 }
-
+.address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
 .address__link {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
-	margin-top: 9px;
+	
+	
 }
 
 .address__item:first-child .address__link {
