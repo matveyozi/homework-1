@@ -40,14 +40,60 @@
       </div>
     </div>
   </header>
-
+  <div class="modal hide">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <form action="#">
+          <div class="modal__close" data-close>
+            <svg class="close__icon">
+              <use href="img/icomoon/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </div>
+          <div class="modal__title">Залиште свої дані, ми вам передзвонимо</div>
+          <ul class="modal__list">
+            <li class="modal__input">
+              <svg class="input__icon" width="12" height="12">
+                <use href="img/icomoon/symbol-defs.svg#icon-name"></use>
+              </svg>
+              <label for="name">Ім'я</label>
+              <input id="name" type="text" required name="name">
+            </li>
+            <li class="modal__input">
+              <svg class="input__icon" width="13" height="13">
+                <use href="img/icomoon/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <label for="phone">Телефон</label>
+              <input id="phone" type="phone" required name="phone">
+            </li>
+            <li class="modal__input">
+              <svg class="input__icon" width="15" height="12">
+                <use href="img/icomoon/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <label for="email">Пошта</label>
+              <input id="email" type="email" required name="email">
+            </li>
+            <li class="modal__input">
+              <label for="comment">Коментар</label>
+              <textarea id="comment" type="text" required name="comment" placeholder="Введіть текст"></textarea>
+            </li>
+          </ul>
+          <div class="modal__policy">
+            <input required type="checkbox">
+            <span>Погоджуюся з розсилкою та приймаю  <a href="/policy.html">Умови договору</a></span>
+          </div>
+          <button class="btn modal__btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
   <main class="main">
     <section class="hero">
       <div class="container">
         <h1 class="title hero__title">
           Ефективні рішення для вашого бізнесу
         </h1>
-        <button type="button" class="btn hero__btn">Замовити послугу</button>
+        <button data-modal-open type="button" class="btn hero__btn">Замовити послугу</button>
       </div>
     </section>
 
@@ -111,9 +157,15 @@
       <div class="container">
         <h2 class="job__title title title-fz36">Чим ми займаємося</h2>
         <ul class="job__list">
-          <li class="job__item"><img src="img/box1.jpg" alt="tab" class="job__img" width="370" /></li>
-          <li class="job__item"><img src="img/box2.jpg" alt="phone" class="job__img" width="370" /></li>
-          <li class="job__item"><img src="img/box3.jpg" alt="color" class="job__img" width="370" /></li>
+          <li class="job__item"><img src="img/box1.jpg" alt="tab" class="job__img" width="370" />
+          <p class="job__descr">Десктопні додатки</p>
+          </li>
+          <li class="job__item"><img src="img/box2.jpg" alt="phone" class="job__img" width="370" />
+          <p class="job__descr">Мобільні додатки</p>
+          </li>
+          <li class="job__item"><img src="img/box3.jpg" alt="color" class="job__img" width="370" />
+          <p class="job__descr">Дизайнерські рішення</p>
+          </li>
         </ul>
       </div>
     </section>
@@ -347,10 +399,25 @@
               </a></li>
           </ul>
         </div>
+        <div class="footer__item">
+          <h3 class="social__title">
+            Підпишіться на розсилку
+          </h3>
+          <form action="#" class="footer__form">
+            <input id="email" type="email" required name="email" placeholder="E-mail">
+            <button class="btn footer__btn">
+              Підписатися
+              <svg class="footer__icon-btn">
+                <use href="img/icomoon/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </footer>
-  <!-- <script src="js/script.js"></script> -->
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -15,6 +15,10 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.icon-mail {
+  width: 1.3330078125em;
+}
+
 .icon-antenna {
   width: 0.9423828125em;
 }

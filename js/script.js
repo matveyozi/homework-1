@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	class TeamCard {
+	/* class TeamCard {
 		constructor(src, alt, name, vacancy, parentSelector) {
 			this.src=src;
 			this.alt=alt;
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			element.classList.add('team__item');
 			element.innerHTML=`
 			<img src=${this.src} alt=${this.alt} class="team__person" width="270" />
-            <div>
-              <h3 class="team__name">${this.name}</h3>
-            <p class="team__vacancy">${this.vacancy}</p>
-            </div>
+			<div>
+			  <h3 class="team__name">${this.name}</h3>
+			<p class="team__vacancy">${this.vacancy}</p>
+			</div>
 			`;
 			this.parent.append(element);
 		}
@@ -51,6 +51,35 @@ document.addEventListener('DOMContentLoaded', () => {
 		"Михайло Єрмаков",
 		"UI Designer",
 		'.team__list'
-	).render();
+	).render(); */
+
+	// Modal 
+
+	const modalOpen = document.querySelector('[data-modal-open]'),
+		modalClose = document.querySelector('[data-close]'),
+		modal = document.querySelector('.modal');
+
+	function openModal() {
+		modal.classList.toggle('hide');
+		document.body.style.overflow = 'hidden';
+	}
+	function closeModal() {
+		modal.classList.toggle('hide');
+		document.body.style.overflow = '';
+	}
+
+	modalOpen.addEventListener('click', openModal);
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal || e.target.getAttribute('data-close') == '') {
+			closeModal();
+		}
+	});
+	document.addEventListener('keydown', (e) => {
+		if (e.code === 'Escape' && !modal.classList.contains('hide')) {
+			closeModal();
+		}
+	})
+
+
 
 });
