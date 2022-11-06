@@ -67,8 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		modal.classList.toggle('hide');
 		document.body.style.overflow = '';
 	}
-
+	
 	modalOpen.addEventListener('click', openModal);
+	modalClose.addEventListener('click', closeModal);
 	modal.addEventListener('click', (e) => {
 		if (e.target === modal || e.target.getAttribute('data-close') == '') {
 			closeModal();
