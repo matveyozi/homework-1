@@ -1,0 +1,43 @@
+.job {
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__descr {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 27px 0;
+        color: #fff;
+        background: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+.job__title {}
+
+.job__list {}
+
+.job__item {}
+
+.job__img {}
+
+.job__descr {}

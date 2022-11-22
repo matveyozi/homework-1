@@ -1,0 +1,131 @@
+.footer {
+    background: #2F303A;
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+        gap: 70px;
+        align-items: baseline;
+    }
+
+    & .logo {
+        display: block;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+
+    &__item .social__link {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+            background-color: var(--blue-color);
+        }
+    }
+
+
+
+    &__form {
+        height: 50px;
+        display: flex;
+        gap: 40px;
+
+        & input {
+            height: 100%;
+            width: 358px;
+            padding: 15px 16px;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            color: #fff;
+
+            &:focus {
+                outline: none;
+                border-color: var(--blue-color);
+            }
+        }
+
+    }
+
+    &__btn {
+        padding: 10px 62px 10px 28px;
+        background-color: var(--blue-color);
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        vertical-align: middle;
+        position: relative;
+
+    }
+
+    &__icon-btn {
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        right: 28px;
+        top: 13px;
+    }
+}
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    max-width: 231px;
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+
+
+    }
+
+    &__item {
+        &:first-child {
+            & .address__link {
+                color: #FFF;
+            }
+        }
+
+        & .address__link:hover,
+        & .address__link:focus {
+            color: var(--blue-color);
+        }
+    }
+
+
+}
+
+
+
+.social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}

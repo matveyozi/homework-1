@@ -1,0 +1,60 @@
+@import 'libs/modern-normalize';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+@import 'untils/veriables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    color: var(--black-color);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+svg {
+    fill: currentColor;
+}
+
+@import 'components/buttons';
+@import 'components/logo';
+@import 'components/title';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/modal';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/job';
+@import 'blocks/team';
+@import 'blocks/social';
+@import 'blocks/clients';
+@import 'blocks/portfolio';
+@import 'blocks/footer';

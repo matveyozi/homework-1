@@ -70,17 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	modalOpen.addEventListener('click', openModal);
 	modalClose.addEventListener('click', closeModal);
-	modal.addEventListener('click', (e) => {
-		if (e.target === modal || e.target.getAttribute('data-close') == '') {
-			closeModal();
-		}
-	});
+	
+	// modal.addEventListener('click', (e) => {
+	// 	if (e.target === modal || e.target.getAttribute('data-close') == '') {
+	// 		closeModal();
+	// 		console.log('done')
+	// 	}
+	// });
 	document.addEventListener('keydown', (e) => {
 		if (e.code === 'Escape' && !modal.classList.contains('hide')) {
 			closeModal();
 		}
 	})
-
 
 
 });
