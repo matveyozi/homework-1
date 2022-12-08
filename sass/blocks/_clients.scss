@@ -1,12 +1,24 @@
 .clients {
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media screen and (min-width:480px) {
+            
+        }
+
+        @media screen and (min-width:768px) {}
+
     }
 
     &__link {
@@ -44,6 +56,4 @@
 .clients__icon {}
 
 .clients__link:hover,
-.clients__link:focus {
-    
-}
+.clients__link:focus {}

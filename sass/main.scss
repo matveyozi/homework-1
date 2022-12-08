@@ -1,6 +1,7 @@
 @import 'libs/modern-normalize';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 @import 'untils/veriables';
+@import 'untils/mixins';
 
 * {
     margin: 0;
@@ -30,14 +31,31 @@ button {
     border: none;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
 }
 
 svg {
@@ -58,3 +76,4 @@ svg {
 @import 'blocks/clients';
 @import 'blocks/portfolio';
 @import 'blocks/footer';
+// @import 'blocks/media';

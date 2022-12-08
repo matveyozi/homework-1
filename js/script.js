@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'.team__list'
 	).render(); */
 
+
 	// Modal 
 
 	const modalOpen = document.querySelector('[data-modal-open]'),
@@ -71,17 +72,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	modalOpen.addEventListener('click', openModal);
 	modalClose.addEventListener('click', closeModal);
 	
-	// modal.addEventListener('click', (e) => {
-	// 	if (e.target === modal || e.target.getAttribute('data-close') == '') {
-	// 		closeModal();
-	// 		console.log('done')
-	// 	}
-	// });
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal || e.target.getAttribute('data-close') == '') {
+			closeModal();
+			console.log('done')
+		}
+	});
 	document.addEventListener('keydown', (e) => {
 		if (e.code === 'Escape' && !modal.classList.contains('hide')) {
 			closeModal();
 		}
 	})
 
+
+	// MENU
+
+	const menu = document.querySelector('.menu-hamburger'),
+		hamburger = document.querySelector('.hamburger'),
+		hamburgerClose = document.querySelector('.hamburger__close');
+
+	function toggleClass(parentSelector, toggleSelector) {
+		parentSelector.classList.toggle(toggleSelector);
+	}
+	// hamburger.addEventListener('click', () => {
+	// 	menu.classList.toggle('menu-hamburger-active');
+	// });
+
+	hamburger.addEventListener('click', ()=> toggleClass(menu, 'menu-hamburger-active'));
+	hamburgerClose.addEventListener('click', ()=> toggleClass(menu, 'menu-hamburger-active'));
 
 });

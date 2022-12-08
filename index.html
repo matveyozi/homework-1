@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <link rel="stylesheet" href="css/main.min.css">
   <title>WebStudio</title>
 </head>
@@ -15,6 +15,43 @@
     <div class="container">
       <div class="header__wrapper">
         <a href="#" class="logo"><span>Web</span>Studio</a>
+        <div class="hamburger">
+          <svg class="hamburger__icon">
+            <use href="img/icomoon/symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+        </div>
+        <nav class="menu-hamburger">
+          <div class="hamburger__close">
+            <svg class="hamburger__close-icon">
+              <use href="img/icomoon/symbol-defs.svg#icon-hamburger_close"></use>
+            </svg>
+          </div>
+          <ul class="menu-hamburger__list">
+            <li class="menu-hamburger__item menu__item-active"><a href="./index.html">Студія</a></li>
+            <li class="menu-hamburger__item "><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="menu-hamburger__item"><a href="#">Контакти</a></li>
+          </ul>
+          <div class="menu-hamburger__wrapper">
+            <ul class="contacts-hamburger__list">
+              <li class="contacts-hamburger__item">
+                <a href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-hamburger__item">
+                <a href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-hamburger__social">
+              <li class="menu-hamburger__social-item"><a href="#" class="menu-hamburger__link">Instagram</a></li>
+              <li class="menu-hamburger__social-item"><a href="#" class="menu-hamburger__link">Twitter</a></li>
+              <li class="menu-hamburger__social-item"><a href="#" class="menu-hamburger__link">Facebook</a></li>
+              <li class="menu-hamburger__social-item"><a href="#" class="menu-hamburger__link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </nav>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item menu__item-active"><a href="./index.html">Студія</a></li>
@@ -31,11 +68,13 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item"><a href="tel:+380961111111">
+          <li class="contacts__item">
+            <a href="tel:+380961111111">
               <svg class="contacts__icon icon-phone">
                 <use href="img/icomoon/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a></li>
+              +38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -83,7 +122,7 @@
               <span class="checkbox__icon"></span>
               <span>Погоджуюся з розсилкою та приймаю <a href="/policy.html">Умови договору</a></span>
             </label>
-            
+
           </div>
           <button class="btn modal__btn">Відправити</button>
         </form>
@@ -179,7 +218,19 @@
         <h3 class="team__title title title-fz36">Наша команда</h3>
         <ul class="team__list">
           <li class="team__item">
-            <img src="img/igor.jpg" alt="Igor" class="team__person" width="270" />
+            <!-- <img src="img/igor.jpg" alt="Igor" class="team__person" width="270"/> -->
+            <img class="team__person" srcset="
+            ./img/igor-mob-450-1x.jpg 450w,
+            ./img/igor-mob-450-2x.jpg 900w,
+            ./img/igor-tab-354-1x.jpg 354w,
+            ./img/igor-tab-354-2x.jpg 708w,
+            ./img/igor.jpg 270w,
+            ./img/igor-2x.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./img/igor.jpg" alt="Igor" loading="lazy" />
+              
+              
+
             <div>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__vacancy">Product Designer</p>
@@ -212,7 +263,15 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="img/olga.jpg" alt="Olga" class="team__person" width="270" />
+            <img class="team__person" srcset="
+                        ./img/olga-mob-450-1x.jpg 450w,
+                        ./img/olga-mob-450-2x.jpg 900w,
+                        ./img/olga-tab-354-1x.jpg 354w,
+                        ./img/olga-tab-354-2x.jpg 708w,
+                        ./img/olga.jpg 270w,
+                        ./img/olga-2x.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" src="./img/olga.jpg"
+              alt="olga" loading="lazy" />
             <div>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__vacancy">Frontend Developer</p>
@@ -245,7 +304,15 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="img/mikola.jpg" alt="Igor" class="team__person" width="270" />
+            <img class="team__person" srcset="
+                        ./img/mikola-mob-450-1x.jpg 450w,
+                        ./img/mikola-mob-450-2x.jpg 900w,
+                        ./img/mikola-tab-354-1x.jpg 354w,
+                        ./img/mikola-tab-354-2x.jpg 708w,
+                        ./img/mikola.jpg 270w,
+                        ./img/mikola-2x.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" src="./img/mikola.jpg"
+              alt="mikola" loading="lazy" />
             <div>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__vacancy">Marketing</p>
@@ -278,7 +345,15 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="img/mihaylo.jpg" alt="Mihaylo" class="team__person" width="270" />
+            <img class="team__person" srcset="
+                        ./img/mihaylo-mob-450-1x.jpg 450w,
+                        ./img/mihaylo-mob-450-2x.jpg 900w,
+                        ./img/mihaylo-tab-354-1x.jpg 354w,
+                        ./img/mihaylo-tab-354-2x.jpg 708w,
+                        ./img/mihaylo.jpg 270w,
+                        ./img/mihaylo-2x.jpg 540w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" src="./img/mihaylo.jpg"
+              alt="mihaylo" loading="lazy" />
             <div>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__vacancy">UI Designer</p>

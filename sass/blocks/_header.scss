@@ -1,55 +1,81 @@
 .header {
-    padding: 25px 0 25px;
+    padding: 16px 0;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (min-width: 768px) {
+        padding: 21px 0;
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+    }
 
     &__wrapper {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        @media screen and (min-width:1200px) {
+            justify-content: unset;
+        }
     }
 }
 
-.contacts__list {
-    display: flex;
-    margin-left: auto;
-}
+.contacts {
+    display: none;
+    &__list {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
 
-.contacts__item {
-    position: relative;
-}
+        &__item {
+            position: relative;
 
-.contacts__item a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--gray-color);
-    display: flex;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                color: var(--gray-color);
+                display: flex;
+                align-items: center;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-.contacts__item a:hover,
-.contacts__item a:focus {
-    color: var(--blue-color);
-}
-
-.contacts__item:last-child {
-    margin-left: 50px;
-}
-
-.contacts__icon {
-
-    margin-right: 10px;
-}
-
-.contacts__icon.icon-envelop {
-    width: 16px;
-    height: 12px;
-}
-
-.contacts__icon.icon-phone {
-    width: 10px;
-    height: 16px;
+                &:hover,
+                &:focus {
+                    color: var(--blue-color);
+                }
+            }
+            &:last-child {
+                
+            }
+        }
+        &__icon {
+            margin-right: 10px;
+            &.icon-envelop {
+                width: 16px;
+                height: 12px;
+            }
+            &.icon-phone {
+                width: 10px;
+                height: 16px;
+            }
+        }
+    }
+    @media screen and (min-width:1200px) {
+        &__list {
+            margin-left: auto;
+            flex-direction: row;
+        }
+        &__item {
+            &:last-child {
+                margin-left: 50px;
+            }
+        }
+    }
+    
 }

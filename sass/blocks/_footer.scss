@@ -4,8 +4,24 @@
 
     &__wrapper {
         display: flex;
-        gap: 70px;
-        align-items: baseline;
+        gap: 60px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        @include mq(mob) {}
+
+        @include mq(tab) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        @media screen and (min-width:1200px) {
+            gap: 70px;
+            align-items: baseline;
+            flex-direction: unset;
+            justify-content: unset;
+        }
     }
 
     & .logo {
@@ -18,27 +34,67 @@
         text-decoration: none;
     }
 
-    &__item .social__link {
-        color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
+    &__item {
+        display: flex;
+        flex-direction: column;
 
-        &:hover,
-        &:focus {
-            background-color: var(--blue-color);
+        // align-items: center;
+        text-align: center;
+
+        &:last-child {
+            width: 100%;
+
+            @include mq(tab) {
+                width: 450px;
+                margin: 0 auto;
+            }
+            @include mq(desk) {
+                width: auto;
+                margin: 0;
+            }
+        }
+        @include mq(desk) {
+            text-align: unset;
+        }
+        & .social__link {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+
+            &:hover,
+            &:focus {
+                background-color: var(--blue-color);
+            }
         }
     }
 
 
 
+
     &__form {
-        height: 50px;
+
         display: flex;
         gap: 40px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(tab) {
+            // height: 50px;
+            width: 450px;
+            gap: 20px;
+        }
+
+        @include mq(desk) {
+            flex-direction: row;
+            height: 50px;
+            width: auto;
+        }
 
         & input {
             height: 100%;
-            width: 358px;
+            width: 100%;
             padding: 15px 16px;
             background-color: transparent;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -52,6 +108,14 @@
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             color: #fff;
 
+            @media screen and (min-width:480px) {
+                width: 450px;
+            }
+
+            @media screen and (min-width:1200px) {
+                width: 358px;
+            }
+
             &:focus {
                 outline: none;
                 border-color: var(--blue-color);
@@ -61,6 +125,7 @@
     }
 
     &__btn {
+        display: block;
         padding: 10px 62px 10px 28px;
         background-color: var(--blue-color);
         font-size: 16px;
@@ -123,7 +188,7 @@
 .social__title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
