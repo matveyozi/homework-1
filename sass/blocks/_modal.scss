@@ -11,8 +11,22 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &__dialog {
-        max-width: 528px;
-        margin: 221px auto;
+        width: 100%;
+        margin: 30px auto;
+
+        @include mq(mob) {
+            margin: 83px auto;
+            width: 450px;
+        }
+
+        @include mq(tab) {
+            margin: 208px auto;
+        }
+
+        @include mq(desk) {
+            margin: 221px auto;
+            max-width: 528px;
+        }
     }
 
     &__content {
@@ -22,6 +36,9 @@
         border-radius: 4px;
         width: 100%;
         padding: 40px;
+        top: 0;
+
+        @include mq(mob) {}
     }
 
     &__close {
@@ -173,6 +190,7 @@
         border: 2px solid var(--black-color);
         border-radius: 4px;
         margin-right: 7px;
+        flex-shrink: 0;
     }
 
     &__btn {

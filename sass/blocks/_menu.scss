@@ -79,9 +79,9 @@
     @media screen and (min-width:1200px) {
         &__list {
             margin-left: 93px;
-            
+
         }
-        
+
     }
 
     &-hamburger {
@@ -119,6 +119,10 @@
             }
 
             &-active {
+                a {
+                    color: var(--blue-color);
+                }
+
                 &::after {
                     display: none;
                 }
@@ -166,6 +170,13 @@
                         display: block;
                     }
                 }
+
+                @include mq(mob) {
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+
             }
         }
 

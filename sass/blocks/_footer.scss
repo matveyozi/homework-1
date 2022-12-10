@@ -14,11 +14,12 @@
         @include mq(tab) {
             flex-direction: row;
             justify-content: space-evenly;
+            align-items: baseline;
         }
 
         @media screen and (min-width:1200px) {
             gap: 70px;
-            align-items: baseline;
+
             flex-direction: unset;
             justify-content: unset;
         }
@@ -48,14 +49,17 @@
                 width: 450px;
                 margin: 0 auto;
             }
+
             @include mq(desk) {
                 width: auto;
                 margin: 0;
             }
         }
+
         @include mq(desk) {
             text-align: unset;
         }
+
         & .social__link {
             color: #fff;
             background: rgba(255, 255, 255, 0.1);
