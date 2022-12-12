@@ -41,7 +41,7 @@ img {
     width: 100%;
     padding: 0 15px;
     @include mq(mob) {
-        width: 450px;
+        width: 480px;
         margin: 0 auto;
     }
     @include mq(tab) {
